@@ -6,14 +6,16 @@
 <ul>
     <li ng-repeat="pet in petController.petList">
         <div class="pet">
-            <div>
-                <strong>Title:</strong> {{ pet.title }}
-                <strong>Description:</strong> {{ pet.description }}
-                <strong>Author:</strong> {{ pet.author }}
-
+            <div class="title">
+              <strong>Title:</strong> {{ pet.title }}
+              <strong>Description:</strong> {{ pet.description }}
+              <strong>Author:</strong> {{ pet.author }}
+            </div>
+              <div class="editdelete">
                 <button ng-click="petController.deletePet (pet.id)" button type="button" class="btn btn-danger">Delete Pet</button>
 
                 <button ng-click="petController.editPet (pet.id)" button type="button" class="btn btn-warning">Edit Pet</button>
+              </div>
             </div>
         </div>
     </li>

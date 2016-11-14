@@ -7,22 +7,16 @@
   },
   "pets": [
     {
-      "title": "Taco",
-      "description": "Bell",
-      "author": "Desctrip",
-      "id": "3"
+      "title": "Sammy",
+      "description": "The Dog",
+      "author": "Mike",
+      "id": 1
     },
     {
-      "title": "Hot",
-      "description": "Bot",
-      "author": "Notty",
-      "id": "4"
-    },
-    {
-      "title": "dfdsf",
-      "description": "sdfd",
-      "author": "sdf",
-      "id": "BycUtovbg"
+      "title": "sda",
+      "description": "sad",
+      "author": "sada",
+      "id": 2
     }
   ]
 }

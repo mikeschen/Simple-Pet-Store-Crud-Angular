@@ -37,6 +37,7 @@ var App;
             });
         };
         PetController.prototype.save = function () {
+            var _this = this;
             this.httpService({
                 url: '/pets',
                 method: 'POST',
@@ -47,7 +48,7 @@ var App;
                 }
             })
                 .success(function (response) {
-                console.log('Test data: ', response);
+                _this.getPetList();
             })
                 .error(function (response) {
             });
@@ -59,7 +60,7 @@ var App;
                 method: 'DELETE'
             })
                 .success(function (response) {
-                _this.stateService.go('home');
+                _this.getPetList();
             })
                 .error(function (response) {
             });

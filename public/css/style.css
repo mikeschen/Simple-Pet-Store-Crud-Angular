@@ -10,6 +10,10 @@ body {
   margin-bottom: 2px;
 }
 
+.title {
+  font-size: 18px;
+}
+
 a {
   color: #c5f7f9;
 }

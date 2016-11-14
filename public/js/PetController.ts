@@ -66,7 +66,7 @@ namespace App {
                 }
             })
             .success ((response) => {
-                console.log ('Test data: ', response);
+              this.getPetList();
             })
             .error ((response) => {
             });
@@ -78,7 +78,8 @@ namespace App {
                 method: 'DELETE'
             })
             .success ((response) => {
-                this.stateService.go ('home');
+              this.getPetList();
+                // this.stateService.go ('pets');
             })
             .error ((response) => {
             });
@@ -87,7 +88,7 @@ namespace App {
         public editPet (petId) {
             this.stateService.go ('pets-edit',
                 {
-                    id: petId
+                  id: petId
                 }
             );
         }
