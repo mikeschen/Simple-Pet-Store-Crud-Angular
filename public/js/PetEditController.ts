@@ -14,13 +14,11 @@ namespace App {
             this.httpService = $http;
             this.stateService = $state;
 
-            console.log ('Passed parameters: ', this.stateService.params);
             this.httpService ({
                 url: '/pets/' + this.stateService.params.id,
                 method: 'GET'
             })
             .success ((response) => {
-                console.log (response);
                 this.pet = response;
             })
             .error (() => {
@@ -30,7 +28,6 @@ namespace App {
         public save () {
             let updateId = this.stateService.params.id;
 
-            // Save the updated data to the server database.
             this.httpService ({
                 url: '/pets/' + updateId,
                 method: 'PUT',
@@ -41,7 +38,6 @@ namespace App {
                 }
             })
             .success (() => {
-                console.log ('Pet saved.');
                 this.stateService.go ('pets');
             })
             .error (() => {

@@ -31,8 +31,7 @@ namespace App {
                     params: {
                         id: null
                     }
-                })
-                ;
+                });
         }
     ]);
 }

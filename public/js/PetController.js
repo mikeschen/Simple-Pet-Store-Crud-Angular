@@ -11,13 +11,11 @@ var App;
         }
         PetController.prototype.getPetList = function () {
             var _this = this;
-            console.log('here');
             this.httpService({
                 url: '/pets',
                 method: 'GET'
             })
                 .success(function (response) {
-                console.log('Test data: ', response);
                 _this.petList = response;
             })
                 .error(function (response) {
@@ -25,7 +23,6 @@ var App;
         };
         PetController.prototype.getPet = function (id) {
             var _this = this;
-            console.log('here');
             this.httpService({
                 url: '/pets',
                 method: 'GET',
@@ -34,14 +31,12 @@ var App;
                 }
             })
                 .success(function (response) {
-                console.log('Test data: ', response);
                 _this.currentPet = response[0];
             })
                 .error(function (response) {
             });
         };
         PetController.prototype.save = function () {
-            console.log('Data to save: ', this.title);
             this.httpService({
                 url: '/pets',
                 method: 'POST',
@@ -59,21 +54,17 @@ var App;
         };
         PetController.prototype.deletePet = function (id) {
             var _this = this;
-            console.log('Deleting Pet: ' + id);
             this.httpService({
                 url: '/pets/' + id,
                 method: 'DELETE'
             })
                 .success(function (response) {
-                console.log('Object deleted.');
-                console.log('Test data: ', response);
                 _this.stateService.go('home');
             })
                 .error(function (response) {
             });
         };
         PetController.prototype.editPet = function (petId) {
-            console.log('Pet id: ' + petId);
             this.stateService.go('pets-edit', {
                 id: petId
             });

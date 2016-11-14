@@ -29,13 +29,11 @@ namespace App {
         }
 
         public getPetList () {
-            console.log ('here');
             this.httpService ({
                 url: '/pets',
                 method: 'GET'
             })
             .success ((response) => {
-                console.log ('Test data: ', response);
                 this.petList = response;
             })
             .error ((response) => {
@@ -43,7 +41,6 @@ namespace App {
         }
 
         public getPet (id) {
-            console.log ('here');
             this.httpService ({
                 url: '/pets',
                 method: 'GET',
@@ -52,8 +49,6 @@ namespace App {
                 }
             })
             .success ((response) => {
-                console.log ('Test data: ', response);
-                // this.postList = response;
                 this.currentPet = response [0];
             })
             .error ((response) => {
@@ -61,8 +56,6 @@ namespace App {
         }
 
         public save () {
-            console.log ('Data to save: ', this.title);
-
             this.httpService ({
                 url: '/pets',
                 method: 'POST',
@@ -80,16 +73,11 @@ namespace App {
         }
 
         public deletePet (id) {
-            console.log ('Deleting Pet: ' + id);
-
             this.httpService ({
                 url: '/pets/' + id,
                 method: 'DELETE'
             })
             .success ((response) => {
-                console.log ('Object deleted.');
-                console.log ('Test data: ', response);
-
                 this.stateService.go ('home');
             })
             .error ((response) => {
@@ -97,8 +85,6 @@ namespace App {
         }
 
         public editPet (petId) {
-            console.log ('Pet id: ' + petId);
-
             this.stateService.go ('pets-edit',
                 {
                     id: petId
