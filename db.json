@@ -7,18 +7,6 @@
   },
   "pets": [
     {
-      "title": "Tommy",
-      "description": "The",
-      "author": "Cat",
-      "id": "1"
-    },
-    {
-      "title": "Hello",
-      "description": "My",
-      "author": "Name",
-      "id": "2"
-    },
-    {
       "title": "Taco",
       "description": "Bell",
       "author": "Desctrip",

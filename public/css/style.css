@@ -1,6 +1,13 @@
 body {
   color: #ffe4e1;
   background-color: #404040;
+  margin: 15px;
+  border: 15px;
+}
+
+.btn {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 a {
