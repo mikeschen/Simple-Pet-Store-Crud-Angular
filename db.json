@@ -1,0 +1,40 @@
+{
+  "test": {
+    "message": "This is a simple message"
+  },
+  "someroute": {
+    "message": "You have hit the test route."
+  },
+  "pets": [
+    {
+      "title": "Tommy",
+      "description": "The",
+      "author": "Cat",
+      "id": "1"
+    },
+    {
+      "title": "Hello",
+      "description": "My",
+      "author": "Name",
+      "id": "2"
+    },
+    {
+      "title": "Taco",
+      "description": "Bell",
+      "author": "Desctrip",
+      "id": "3"
+    },
+    {
+      "title": "Hot",
+      "description": "Bot",
+      "author": "Notty",
+      "id": "4"
+    },
+    {
+      "title": "dfdsf",
+      "description": "sdfd",
+      "author": "sdf",
+      "id": "BycUtovbg"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<h2>Pets</h2>
+
+<button ng-click="petController.getPetList ()" type="button" class="btn btn-info">Get Pet List</button>
+
+<!-- List out the pet objects -->
+<ul>
+    <li ng-repeat="pet in petController.petList">
+        <div class="pet">
+            <div>
+                <strong>title:</strong> {{ pet.title }}
+                <strong>description:</strong> {{ pet.description }}
+                <strong>author:</strong> {{ pet.author }}
+
+                <button ng-click="petController.deletePet (pet.id)" button type="button" class="btn btn-danger">Delete Pet</button>
+
+                <button ng-click="petController.editPet (pet.id)" button type="button" class="btn btn-warning">Edit Pet</button>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<button ng-click="petController.getPet ()" type="button" class="btn btn-primary">Get A Single Pet</button>
+<button ng-click="petController.getPet (1)" type="button" class="btn btn-primary">Get Pet 1</button>
+<button ng-click="petController.getPet (2)" type="button" class="btn btn-primary">Get Pet 2</button>
+<button ng-click="petController.getPet (3)" type="button" class="btn btn-primary">Get Pet 3</button>
+
+<!-- Show the details of the currently selected item. -->
+<div>
+    <strong>title:</strong> {{ petController.currentPet.title }}
+    <strong>description:</strong> {{ petController.currentPet.description }}
+    <strong>author:</strong> {{ petController.currentPet.author }}
+</div>
+
+<form ng-submit="petController.save ()">
+    <input name="title" ng-model="petController.title"> <br>
+    <input name="description" ng-model="petController.description"> <br>
+    <input name="author" ng-model="petController.author"> <br>
+    <button type="submit" class="btn btn-success">Save Pet</button>
+</form>

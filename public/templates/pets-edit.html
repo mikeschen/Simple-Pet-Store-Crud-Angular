@@ -1,0 +1,17 @@
+<h2>Pets Edit</h2>
+
+<form ng-submit="petEditController.save ()">
+    <label>Title</label>
+    <input ng-model="petEditController.pet.title">
+    <br>
+
+    <label>Description</label>
+    <input ng-model="petEditController.pet.description">
+    <br>
+
+    <label>Author</label>
+    <input ng-model="petEditController.pet.author">
+    <br>
+
+    <button type="button" class="btn btn-primary">Save</button>
+<form>

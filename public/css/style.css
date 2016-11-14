@@ -1,0 +1,16 @@
+body {
+  color: #ffe4e1;
+  background-color: #404040;
+}
+
+a {
+  color: #c5f7f9;
+}
+
+textarea:focus, input:focus {
+    color: #ff0000;
+}
+
+input, select, textarea{
+    color: #000;
+}
