@@ -8,15 +8,33 @@
   "pets": [
     {
       "title": "Sammy",
-      "description": "The Dog",
+      "description": "The Dogg",
       "author": "Mike",
       "id": 1
     },
     {
-      "title": "sda",
-      "description": "sad",
-      "author": "sada",
+      "title": "Josie",
+      "description": "The Cat",
+      "author": "John",
       "id": 2
+    },
+    {
+      "title": "Toots",
+      "description": "Mayahll",
+      "author": "Peter",
+      "id": 3
+    },
+    {
+      "title": "John",
+      "description": "Baptist",
+      "author": "The Tird",
+      "id": 4
+    },
+    {
+      "title": "JJ",
+      "description": "The Lemur",
+      "author": "J Johnson",
+      "id": "5"
     }
   ]
 }

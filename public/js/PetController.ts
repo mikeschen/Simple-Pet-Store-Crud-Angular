@@ -56,6 +56,7 @@ namespace App {
         }
 
         public save () {
+
             this.httpService ({
                 url: '/pets',
                 method: 'POST',
@@ -67,6 +68,9 @@ namespace App {
             })
             .success ((response) => {
               this.getPetList();
+              this.title = "";
+              this.description = "";
+              this.author = "";
             })
             .error ((response) => {
             });

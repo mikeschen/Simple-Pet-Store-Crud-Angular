@@ -33,9 +33,9 @@
     <strong>author:</strong> {{ petController.currentPet.author }}
 </div>
 
-<form ng-submit="petController.save ()">
+<form ng-submit="petController.save ()" name="saveForm">
     <input name="title" ng-model="petController.title"> <br>
     <input name="description" ng-model="petController.description"> <br>
     <input name="author" ng-model="petController.author"> <br>
-    <button type="submit" class="btn btn-success">Save Pet</button>
+    <button type="submit" class="btn btn-success" id="saveButton">Save Pet</button>
 </form>

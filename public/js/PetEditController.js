@@ -5,11 +5,13 @@ var App;
             var _this = this;
             this.httpService = $http;
             this.stateService = $state;
+            console.log('Passed parameters: ', this.stateService.params);
             this.httpService({
                 url: '/pets/' + this.stateService.params.id,
                 method: 'GET'
             })
                 .success(function (response) {
+                console.log("responseeeee", response);
                 _this.pet = response;
             })
                 .error(function () {
@@ -28,6 +30,7 @@ var App;
                 }
             })
                 .success(function () {
+                console.log('pet saveedddddd');
                 _this.stateService.go('pets');
             })
                 .error(function () {

@@ -49,6 +49,9 @@ var App;
             })
                 .success(function (response) {
                 _this.getPetList();
+                _this.title = "";
+                _this.description = "";
+                _this.author = "";
             })
                 .error(function (response) {
             });
