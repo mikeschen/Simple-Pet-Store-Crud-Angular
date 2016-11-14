@@ -7,9 +7,9 @@
     <li ng-repeat="pet in petController.petList">
         <div class="pet">
             <div class="title">
-              <strong>Title:</strong> {{ pet.title }}
+              <strong>Name:</strong> {{ pet.title }}
               <strong>Description:</strong> {{ pet.description }}
-              <strong>Author:</strong> {{ pet.author }}
+              <strong>Owner:</strong> {{ pet.author }}
             </div>
               <div class="editdelete">
                 <button ng-click="petController.deletePet (pet.id)" button type="button" class="btn btn-danger">Delete Pet</button>
